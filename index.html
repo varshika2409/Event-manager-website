@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Wildlife</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: #2d4059;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero {
+            background: url('img/tiger.jpg.jpeg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .cta {
+            background-color: #ea5455;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .cta:hover {
+            background-color: #d43a3a;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .mission {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .donation {
+            background-color: #2d4059;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .donation h2 {
+            margin-bottom: 20px;
+        }
+
+        .donation form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .donation input, .donation button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+            font-size: 1em;
+        }
+
+        .donation button {
+            background-color: #ea5455;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .donation button:hover {
+            background-color: #d43a3a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2d4059;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Protect Wildlife</h1>
+        <p>For a Future Filled with Biodiversity</p>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Save Our Endangered Animals</h1>
+            <p>Join our mission to protect wildlife and their habitats.</p>
+            <button class="cta">Get Involved</button>
+        </div>
+    </div>
+
+    <section class="section mission">
+        <h2>Our Mission</h2>
+        <p>We strive to protect endangered species and conserve natural habitats for future generations. Your support can make a big difference.</p>
+    </section>
+
+    <section class="section">
+        <div class="gallery">
+            <img src="img/deer.jpeg">
+            <img src="img/vulture.jpeg">
+            <img src="img/tahr.jpeg">
+            <img src="img/sparrow.jpeg">
+        </div>
+    </section>
+
+    <section class="donation">
+        <h2>Make a Donation</h2>
+        <p>Every contribution helps us save lives and protect our planet's biodiversity.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="number" placeholder="Donation Amount" required>
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Protect Wildlife. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
