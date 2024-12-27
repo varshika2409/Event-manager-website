@@ -3,186 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protect Wildlife</title>
+    <meta name="description" content="Event promotion website for an upcoming event.">
+    <title>Event Promotion</title>
     <style>
-        /* General Styles */
+        /* Global Styles */
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: url('mm.jpeg') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
         header {
-            background-color: #2d4059;
-            padding: 20px;
+            background: rgba(255, 87, 51, 0.8);
+            color: #fff;
+            padding: 1.5rem 0;
             text-align: center;
-            color: white;
         }
 
-        .hero {
-            background: url('img/tiger.jpg.jpeg') no-repeat center center/cover;
-            height: 80vh;
+        nav {
             display: flex;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
+            background: rgba(51, 51, 51, 0.8);
+            padding: 0.5rem 0;
         }
 
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.2);
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
         }
 
-        .hero h1, .hero p {
-            position: relative;
-            z-index: 1;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        .hero h1 {
-            font-size: 3em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        .cta {
-            background-color: #ea5455;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            color: white;
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
 
-        .cta:hover {
-            background-color: #d43a3a;
+        section {
+            margin-bottom: 2rem;
         }
 
-        .section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
+        section h2 {
+            color: #FF5733;
         }
 
-        .gallery {
+        .event-details {
             display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
         }
 
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .mission {
-            background-color: #f4f4f4;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .donation {
-            background-color: #2d4059;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .donation h2 {
-            margin-bottom: 20px;
-        }
-
-        .donation form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .donation input, .donation button {
-            padding: 10px;
-            margin: 10px 0;
-            width: 300px;
-            font-size: 1em;
-        }
-
-        .donation button {
-            background-color: #ea5455;
-            color: white;
-            border: none;
+        .event-details div {
+            flex: 1 1 45%;
+            margin: 0.5rem;
+            background: rgba(244, 244, 249, 0.9);
+            padding: 1rem;
             border-radius: 5px;
-        }
-
-        .donation button:hover {
-            background-color: #d43a3a;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #2d4059;
-            color: white;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Protect Wildlife</h1>
-        <p>For a Future Filled with Biodiversity</p>
+        <h1>Upcoming Event: CodeFest 2024</h1>
     </header>
 
-    <div class="hero">
-        <div>
-            <h1>Save Our Endangered Animals</h1>
-            <p>Join our mission to protect wildlife and their habitats.</p>
-            <button class="cta">Get Involved</button>
-        </div>
-    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+    </nav>
 
-    <section class="section mission">
-        <h2>Our Mission</h2>
-        <p>We strive to protect endangered species and conserve natural habitats for future generations. Your support can make a big difference.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Join us for CodeFest 2024, a one-day event bringing together developers, designers, and tech enthusiasts to learn, network, and create!</p>
+        </section>
 
-    <section class="section">
-        <div class="gallery">
-            <img src="img/deer.jpeg">
-            <img src="img/vulture.jpeg">
-            <img src="img/tahr.jpeg">
-            <img src="img/sparrow.jpeg">
-        </div>
-    </section>
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <div class="event-details">
+                <div>
+                    <h3>Opening Ceremony</h3>
+                    <p><strong>Time:</strong> 9:00 AM</p>
+                    <p><strong>Location:</strong> Main Hall</p>
+                </div>
+                <div>
+                    <h3>Workshops</h3>
+                    <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                    <p><strong>Location:</strong> Workshop Rooms</p>
+                </div>
+                <div>
+                    <h3>Networking Lunch</h3>
+                    <p><strong>Time:</strong> 12:30 PM</p>
+                    <p><strong>Location:</strong> Cafeteria</p>
+                </div>
+                <div>
+                    <h3>Hackathon</h3>
+                    <p><strong>Time:</strong> 1:30 PM - 5:00 PM</p>
+                    <p><strong>Location:</strong> Hackathon Area</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="donation">
-        <h2>Make a Donation</h2>
-        <p>Every contribution helps us save lives and protect our planet's biodiversity.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="number" placeholder="Donation Amount" required>
-            <button type="submit">Donate Now</button>
-        </form>
-    </section>
+        <section id="register">
+            <h2>Register Now</h2>
+            <p>Don’t miss out on this amazing event! <a href="#">Click here to register</a> and secure your spot today.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Protect Wildlife. All Rights Reserved.</p>
+        <p>&copy; 2024 CodeFest. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
